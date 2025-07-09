@@ -1,0 +1,7 @@
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.csproj.AssemblyReference.cache
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.AssemblyInfoInputs.cache
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.AssemblyInfo.cs
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.csproj.CoreCompileInputs.cache
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.MvcApplicationPartsAssemblyInfo.cache
