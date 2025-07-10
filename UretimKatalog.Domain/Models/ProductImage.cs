@@ -1,9 +1,18 @@
 namespace UretimKatalog.Domain.Models
 {
-    public class ProductImage : BaseEntity
+  public class ProductImage : BaseEntity
+{
+    public Guid ProductId { get; private set; }
+    public string Url { get; private set; }
+    public bool IsMain { get; private set; }
+
+    public ProductImage(Guid productId, string url, bool isMain = false)
     {
-        public string Url { get; set; } = null!;
-        public int ProductId { get; set; }
-        public Product Product { get; set; } = null!;
+        ProductId = productId;
+        Url = url;
+        IsMain = isMain;
     }
+    public void SetMain() => IsMain = true;
+}
+
 }
