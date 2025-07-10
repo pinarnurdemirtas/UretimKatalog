@@ -11,19 +11,19 @@ public class UnitOfWork : IUnitOfWork
 
     public IProductRepository      Products      { get; }
     public ICategoryRepository     Categories    { get; }
-    public IProductImageRepository ProductImages { get; }  // <-- ekli
+    public IProductImageRepository ProductImages { get; }  
 
     public UnitOfWork(
         AppDbContext ctx,
         IProductRepository prodRepo,
         ICategoryRepository catRepo,
-        IProductImageRepository imgRepo      // <-- ekli
+        IProductImageRepository imgRepo      
     )
     {
         _ctx            = ctx;
         Products        = prodRepo;
         Categories      = catRepo;
-        ProductImages   = imgRepo;             // <-- atama
+        ProductImages   = imgRepo;             
     }
 
     public async Task<int> CommitAsync() 

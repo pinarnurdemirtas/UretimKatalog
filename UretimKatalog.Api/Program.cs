@@ -1,70 +1,105 @@
-using System;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using System.Text;
 using Microsoft.EntityFrameworkCore;
 using FluentValidation;
 using FluentValidation.AspNetCore;
-using UretimKatalog.Application.Services; 
-using UretimKatalog.Api.Base;
+using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using UretimKatalog.Api.Middleware;
 using UretimKatalog.Application.Mappings;
-using UretimKatalog.Application.Services;
 using UretimKatalog.Application.Interfaces;
+using UretimKatalog.Application.Services;
 using UretimKatalog.Infrastructure.Data;
 using UretimKatalog.Infrastructure.UnitOfWork;
 using UretimKatalog.Infrastructure.Repositories;
 using UretimKatalog.Domain.Interfaces;
+using UretimKatalog.Api.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Configuration
 var connectionString = builder.Configuration.GetConnectionString("Default");
 
-// 2. EF Core + MySQL (Pomelo 8.x)
 builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 33)))
 );
 
-// 3. FluentValidation
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 builder.Services.AddFluentValidationAutoValidation();
 
-// 4. Controllers
-builder.Services.AddControllers();
-
-// 5. DI: Repositories, UnitOfWork and Services
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IProductImageRepository, ProductImageRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<IProductImageRepository, ProductImageRepository>();
 builder.Services.AddScoped<IProductImageService, ProductImageService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
-
-// 6. AutoMapper
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
-// 7. Swagger/OpenAPI
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        };
+    });
 
-// 8. CORS
-builder.Services.AddCors(opt =>
-    opt.AddDefaultPolicy(policy =>
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "UretimKatalog API", Version = "v1" });
+
+    var jwtScheme = new OpenApiSecurityScheme
+    {
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.Http,
+        Reference = new OpenApiReference
+        {
+            Type = ReferenceType.SecurityScheme,
+            Id = JwtBearerDefaults.AuthenticationScheme
+        }
+    };
+    c.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, jwtScheme);
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        { jwtScheme, Array.Empty<string>() }
+    });
+});
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
         policy.AllowAnyOrigin()
               .AllowAnyMethod()
-              .AllowAnyHeader()
-    )
-);
+              .AllowAnyHeader();
+    });
+});
+
+builder.Services.AddAuthorization();
+
 
 var app = builder.Build();
 
-// 9. Exception handling middleware
-app.UseMiddleware<ExceptionMiddleware>();
 builder.WebHost.UseWebRoot("wwwroot");
-app.UseStaticFiles();  // wwwroot altında
+app.UseStaticFiles();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
@@ -73,14 +108,16 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseCors();
+
+app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapAuth();
+app.MapProducts();
+app.MapCategories();
 
 app.Run();
 
-namespace UretimKatalog.Api
-{
-    public partial class Program { }
-}
+namespace UretimKatalog.Api { public partial class Program { } }

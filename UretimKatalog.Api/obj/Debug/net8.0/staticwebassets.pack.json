@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\uploads\\products\\1\\93d2abc6-8a51-4536-9d0d-0c2e0408431f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\1\\93d2abc6-8a51-4536-9d0d-0c2e0408431f.jpg"
+    },
+    {
       "Id": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\uploads\\products\\1\\d1e15e5f-e878-4e51-89e2-f9278cc9f0c3.jpg",
       "PackagePath": "staticwebassets\\uploads\\products\\1\\d1e15e5f-e878-4e51-89e2-f9278cc9f0c3.jpg"
     },

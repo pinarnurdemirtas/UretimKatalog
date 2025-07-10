@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jiaVHyro0axPu7NdwxoX2sxSJcsYoz71DKX4N/IWG48=",
+  "Hash": "DMoxjTF4JR19rFMmkVNDKeMApTth0l5dbpNH+Y1qDzE=",
   "Source": "UretimKatalog.Api",
   "BasePath": "_content/UretimKatalog.Api",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\uploads\\products\\1\\93d2abc6-8a51-4536-9d0d-0c2e0408431f.jpg",
+      "SourceId": "UretimKatalog.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\",
+      "BasePath": "_content/UretimKatalog.Api",
+      "RelativePath": "uploads/products/1/93d2abc6-8a51-4536-9d0d-0c2e0408431f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\products\\1\\93d2abc6-8a51-4536-9d0d-0c2e0408431f.jpg"
+    },
     {
       "Identity": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\uploads\\products\\1\\d1e15e5f-e878-4e51-89e2-f9278cc9f0c3.jpg",
       "SourceId": "UretimKatalog.Api",

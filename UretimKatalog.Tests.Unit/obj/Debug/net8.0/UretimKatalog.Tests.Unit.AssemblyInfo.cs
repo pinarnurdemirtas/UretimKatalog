@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UretimKatalog.Tests.Unit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d04b4c1c59f1994fe8f82b838d8ab84fde4041c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cd06581a3833534f5fe18bcd48b988223c3255f")]
 [assembly: System.Reflection.AssemblyProductAttribute("UretimKatalog.Tests.Unit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UretimKatalog.Tests.Unit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
