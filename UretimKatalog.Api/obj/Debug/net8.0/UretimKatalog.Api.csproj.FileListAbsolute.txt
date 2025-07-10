@@ -105,6 +105,7 @@ C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\Ureti
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.csproj.CoreCompileInputs.cache
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.sourcelink.json
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\staticwebassets\msbuild.UretimKatalog.Api.Microsoft.AspNetCore.StaticWebAssets.props

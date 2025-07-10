@@ -5,6 +5,7 @@ C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\Ur
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.AssemblyInfoInputs.cache
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.AssemblyInfo.cs
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.csproj.CoreCompileInputs.cache
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.sourcelink.json
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.dll
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\refint\UretimKatalog.Domain.dll
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.pdb

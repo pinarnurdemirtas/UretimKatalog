@@ -8,6 +8,7 @@ C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Application\obj\Debug\net8
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Application\obj\Debug\net8.0\UretimKatalog.Application.AssemblyInfoInputs.cache
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Application\obj\Debug\net8.0\UretimKatalog.Application.AssemblyInfo.cs
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Application\obj\Debug\net8.0\UretimKatalog.Application.csproj.CoreCompileInputs.cache
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Application\obj\Debug\net8.0\UretimKatalog.Application.sourcelink.json
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Application\obj\Debug\net8.0\UretimKatalog.Application.csproj.CopyComplete
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Application\obj\Debug\net8.0\UretimKatalog.Application.dll
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Application\obj\Debug\net8.0\refint\UretimKatalog.Application.dll

@@ -70,3 +70,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+namespace UretimKatalog.Api
+{
+    public partial class Program { }
+}

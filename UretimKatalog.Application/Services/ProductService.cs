@@ -55,5 +55,10 @@ namespace UretimKatalog.Application.Services
             _uow.Products.Update(entity);
             await _uow.CommitAsync();
         }
+
+        public void UpdateStockAsync(int v1, int v2)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

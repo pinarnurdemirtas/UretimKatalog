@@ -11,6 +11,7 @@ C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\obj\Debug\n
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\obj\Debug\net8.0\UretimKatalog.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\obj\Debug\net8.0\UretimKatalog.Infrastructure.AssemblyInfo.cs
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\obj\Debug\net8.0\UretimKatalog.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\obj\Debug\net8.0\UretimKatalog.Infrastructure.sourcelink.json
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\obj\Debug\net8.0\UretimKatalog.Infrastructure.csproj.CopyComplete
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\obj\Debug\net8.0\UretimKatalog.Infrastructure.dll
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\obj\Debug\net8.0\refint\UretimKatalog.Infrastructure.dll
