@@ -60,5 +60,34 @@ namespace UretimKatalog.Application.Services
         {
             throw new NotImplementedException();
         }
+        public async Task UpdateStockAsync(UpdateStockDto dto)
+        {
+            var product = await _uow.Products.GetByIdAsync(dto.Id)
+                          ?? throw new KeyNotFoundException($"Ürün (ID: {dto.Id}) bulunamadı");
+            product.Stock = dto.Stock;
+            _uow.Products.Update(product);
+            await _uow.CommitAsync();
+        }
+
+        public async Task UpdatePriceAsync(UpdatePriceDto dto)
+        {
+            var product = await _uow.Products.GetByIdAsync(dto.Id)
+                          ?? throw new KeyNotFoundException($"Ürün (ID: {dto.Id}) bulunamadı");
+            product.Price = dto.Price;
+            _uow.Products.Update(product);
+            await _uow.CommitAsync();
+        }
+        public async Task ToggleStatusAsync(int id)
+        {
+            var product = await _uow.Products.GetByIdAsync(id)
+                          ?? throw new KeyNotFoundException($"Ürün (ID: {id}) bulunamadı");
+
+            // Aktifse pasif, pasifse aktif yap
+            product.IsActive = !product.IsActive;
+
+            _uow.Products.Update(product);
+            await _uow.CommitAsync();
+        }
+    
     }
 }

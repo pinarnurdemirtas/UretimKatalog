@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3HjaT8F6V7vuOXP4BfusD+doSiCptkZ1f5Hu0K7a607JVi1W3cFqM+p8GYxBTENHLcwNW2f4WTmwjCHGd5dBzQ==",
+  "dgSpecHash": "QNZ5UfLiIhF4J7Qc1hi/FVlyaqnNg5/E4ooL3qHojB5ONQ8DgXkDi4rmvcKNgR4x/FGsVE0Xf5bE0Bk7Y+tmJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
+  "projectFilePath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

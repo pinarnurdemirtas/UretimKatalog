@@ -120,3 +120,4 @@ C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\refin
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.pdb
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\UretimKatalog.Api.genruntimeconfig.cache
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\obj\Debug\net8.0\ref\UretimKatalog.Api.dll
+c:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Api\bin\Debug\net8.0\UretimKatalog.Api.staticwebassets.runtime.json

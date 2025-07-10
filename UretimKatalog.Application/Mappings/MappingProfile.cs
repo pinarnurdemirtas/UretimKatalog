@@ -17,6 +17,9 @@ namespace UretimKatalog.Application.Mappings
             CreateMap<Category, CategoryDto>();
             CreateMap<CreateCategoryDto, Category>();
             CreateMap<UpdateCategoryDto, Category>();
+
+            CreateMap<ProductImage, ProductImageDto>();
+        CreateMap<CreateProductImageDto, ProductImage>();
         }
     }
 }

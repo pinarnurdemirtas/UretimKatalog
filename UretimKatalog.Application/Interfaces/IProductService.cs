@@ -11,5 +11,9 @@ namespace UretimKatalog.Application.Interfaces
         Task<ProductDto> CreateAsync(CreateProductDto dto);
         Task UpdateAsync(UpdateProductDto dto);
         Task DeleteAsync(int id);
+        Task UpdateStockAsync(UpdateStockDto dto);
+        Task UpdatePriceAsync(UpdatePriceDto dto);
+        Task ToggleStatusAsync(int id);
+
     }
 }

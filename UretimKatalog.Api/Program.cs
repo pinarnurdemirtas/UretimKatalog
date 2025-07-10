@@ -1,10 +1,11 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using FluentValidation;
 using FluentValidation.AspNetCore;
-
+using UretimKatalog.Application.Services; 
 using UretimKatalog.Api.Base;
 using UretimKatalog.Api.Middleware;
 using UretimKatalog.Application.Mappings;
@@ -12,6 +13,7 @@ using UretimKatalog.Application.Services;
 using UretimKatalog.Application.Interfaces;
 using UretimKatalog.Infrastructure.Data;
 using UretimKatalog.Infrastructure.UnitOfWork;
+using UretimKatalog.Infrastructure.Repositories;
 using UretimKatalog.Domain.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -31,10 +33,15 @@ builder.Services.AddFluentValidationAutoValidation();
 // 4. Controllers
 builder.Services.AddControllers();
 
-// 5. DI: UnitOfWork ve Servisler
+// 5. DI: Repositories, UnitOfWork and Services
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductImageRepository, ProductImageRepository>();
+builder.Services.AddScoped<IProductImageService, ProductImageService>();
+
 
 // 6. AutoMapper
 builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
@@ -56,6 +63,8 @@ var app = builder.Build();
 
 // 9. Exception handling middleware
 app.UseMiddleware<ExceptionMiddleware>();
+builder.WebHost.UseWebRoot("wwwroot");
+app.UseStaticFiles();  // wwwroot altında
 
 if (app.Environment.IsDevelopment())
 {
@@ -70,6 +79,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
 namespace UretimKatalog.Api
 {
     public partial class Program { }

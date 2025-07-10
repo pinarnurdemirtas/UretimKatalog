@@ -57,13 +57,13 @@ namespace UretimKatalog.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 7, 9, 13, 43, 5, 757, DateTimeKind.Utc).AddTicks(7879),
+                            CreatedAt = new DateTime(2025, 7, 10, 10, 33, 9, 124, DateTimeKind.Utc).AddTicks(7323),
                             Name = "Elektronik"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 7, 9, 13, 43, 5, 757, DateTimeKind.Utc).AddTicks(7884),
+                            CreatedAt = new DateTime(2025, 7, 10, 10, 33, 9, 124, DateTimeKind.Utc).AddTicks(7329),
                             Name = "Kitap"
                         });
                 });
@@ -110,7 +110,7 @@ namespace UretimKatalog.Infrastructure.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2025, 7, 9, 13, 43, 5, 757, DateTimeKind.Utc).AddTicks(8069),
+                            CreatedAt = new DateTime(2025, 7, 10, 10, 33, 9, 124, DateTimeKind.Utc).AddTicks(7742),
                             IsActive = true,
                             Name = "Telefon",
                             Price = 1500m,
@@ -120,7 +120,7 @@ namespace UretimKatalog.Infrastructure.Migrations
                         {
                             Id = 2,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2025, 7, 9, 13, 43, 5, 757, DateTimeKind.Utc).AddTicks(8076),
+                            CreatedAt = new DateTime(2025, 7, 10, 10, 33, 9, 124, DateTimeKind.Utc).AddTicks(7748),
                             IsActive = true,
                             Name = "Roman",
                             Price = 50m,
@@ -139,6 +139,13 @@ namespace UretimKatalog.Infrastructure.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("IsMain")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
@@ -153,7 +160,7 @@ namespace UretimKatalog.Infrastructure.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductImage");
+                    b.ToTable("ProductImages");
                 });
 
             modelBuilder.Entity("UretimKatalog.Domain.Models.Category", b =>

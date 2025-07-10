@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\uploads\\products\\1\\d1e15e5f-e878-4e51-89e2-f9278cc9f0c3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\1\\d1e15e5f-e878-4e51-89e2-f9278cc9f0c3.jpg"
+    },
+    {
+      "Id": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\uploads\\products\\1\\efaa9c19-6b2a-4055-b654-1be431591015.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\1\\efaa9c19-6b2a-4055-b654-1be431591015.jpg"
+    },
+    {
+      "Id": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\uploads\\products\\1\\ff87b2b7-673c-42a3-a8e5-c6f481392095.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\1\\ff87b2b7-673c-42a3-a8e5-c6f481392095.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.UretimKatalog.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.UretimKatalog.Api.props",
+      "PackagePath": "build\\UretimKatalog.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.UretimKatalog.Api.props",
+      "PackagePath": "buildMultiTargeting\\UretimKatalog.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.UretimKatalog.Api.props",
+      "PackagePath": "buildTransitive\\UretimKatalog.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
