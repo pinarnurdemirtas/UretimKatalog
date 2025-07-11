@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2TIY3ufDp1xKpCX7vzbvPWzF9Cwd24C5LBDcJv63eElZyfBckNFQH9ulcfXMPZwp0gWJfLLAFiagb1pzKFX51w==",
+  "dgSpecHash": "DmqFhq9x/tY2J1Ov8A4LVqwpc2SVs/oNCgUX5PXNR4w5L2PwLLIqzAVnIKkkeXx04k5pMvkVsy/fuMdf+Z0gXg==",
   "success": true,
   "projectFilePath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\UretimKatalog.Api.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,9 @@
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
+    "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
@@ -67,5 +70,16 @@
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.5.0 was resolved.",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

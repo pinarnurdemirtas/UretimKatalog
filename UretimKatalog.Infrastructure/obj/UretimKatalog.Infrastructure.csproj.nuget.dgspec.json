@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj": {}
+    "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj": {}
   },
   "projects": {
     "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
@@ -53,6 +53,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[11.7.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
@@ -144,14 +148,14 @@
         }
       }
     },
-    "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj": {
+    "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
         "projectName": "UretimKatalog.Infrastructure",
-        "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pinarnurdemirtas\\AppData\\Roaming\\NuGet\\NuGet.Config"

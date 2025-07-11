@@ -14,8 +14,25 @@ using UretimKatalog.Infrastructure.UnitOfWork;
 using UretimKatalog.Infrastructure.Repositories;
 using UretimKatalog.Domain.Interfaces;
 using UretimKatalog.Api.Endpoints;
+using UretimKatalog.Application.Features.Auth.Commands;   
+using UretimKatalog.Application.Features.Products.Commands;   
+
+using MediatR;
+using System.Reflection;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssemblies(
+        Assembly.GetAssembly(typeof(CreateProductCommandHandler))!,
+        Assembly.GetAssembly(typeof(DeleteProductCommandHandler))!,
+        Assembly.GetAssembly(typeof(UpdateProductCommandHandler))!,
+        Assembly.GetAssembly(typeof(AuthenticateCommandHandler))!
+    );
+});
 
 var connectionString = builder.Configuration.GetConnectionString("Default");
 
@@ -105,6 +122,13 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+        app.UseDeveloperExceptionPage();    // Burada gerçek istisna mesajını görebilirsiniz
+
+}
+
+else
+{
+    app.UseExceptionHandler("/error");  // Prod ortam için custom handler
 }
 
 app.UseHttpsRedirection();

@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
-                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
+              "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
+                "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
               },
-              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj"
+              "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj": {
+                "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj"
               }
             }
           }
@@ -48,6 +48,14 @@
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[11.3.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.*, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -91,14 +99,14 @@
         }
       }
     },
-    "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
+    "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj",
+        "projectUniqueName": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj",
         "projectName": "UretimKatalog.Application",
-        "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj",
+        "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj",
         "packagesPath": "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\obj\\",
+        "outputPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pinarnurdemirtas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -140,6 +148,10 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[11.7.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
             },
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
@@ -231,14 +243,14 @@
         }
       }
     },
-    "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj": {
+    "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
         "projectName": "UretimKatalog.Infrastructure",
-        "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
+        "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\obj\\",
+        "outputPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pinarnurdemirtas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -253,8 +265,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
-                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
+              "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
+                "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
               },
               "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
                 "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"

@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "hGX9hK3avkcFdTh3Q6PISUz8MfS32Uy6ut8hfTgByzcg+/xo0K/1MPX4KNecV1tbvXbn4rVo279HS9wtExHQ9w==",
+  "dgSpecHash": "Twj+/NdZkij8z5PAiWzsR72cuVKfBgeZFweQ4FHvN72OGdOTi7zPSiuOpBCKOGW2IEGC7Do25C1fqavujVlveQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\fluentvalidation\\11.7.0\\fluentvalidation.11.7.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

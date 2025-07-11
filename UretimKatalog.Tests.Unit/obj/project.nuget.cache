@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D4Al9YBht2YM5JvksZ67/lzT8uh7XmtflKavLoy5tK8LGL9BNr3aHsmJfL2+nTK/gsHRApg1d6bNeijzrXdf5w==",
+  "dgSpecHash": "hR/AfkexQ0eCR1rbBc7y2Iga+a8H/8J1B1DzQ78rzM+3oSOIo/Py2+2Yi1BTvbu69FITksaUcceIxm1kcheE7w==",
   "success": true,
   "projectFilePath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Tests.Unit\\UretimKatalog.Tests.Unit.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,9 @@
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\fluentassertions\\8.4.0\\fluentassertions.8.4.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\fluentvalidation\\11.7.0\\fluentvalidation.11.7.0.nupkg.sha512",
+    "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
