@@ -14,5 +14,8 @@ namespace UretimKatalog.Infrastructure.Repositories
             => _context.Set<Category>()
                        .Where(c => c.ParentCategoryId == parentId)
                        .AsNoTracking();
+
+        public async Task<bool> ExistsAsync(int id)
+=> await _context.Categories.AnyAsync(c => c.Id == id);
     }
 }

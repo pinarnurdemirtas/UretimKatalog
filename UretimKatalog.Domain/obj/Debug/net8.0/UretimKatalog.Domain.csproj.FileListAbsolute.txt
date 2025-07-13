@@ -10,3 +10,15 @@ C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\Ur
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\refint\UretimKatalog.Domain.dll
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.pdb
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\ref\UretimKatalog.Domain.dll
+C:\Users\pinar\UretimKatalog\UretimKatalog.Domain\bin\Debug\net8.0\UretimKatalog.Domain.deps.json
+c:\Users\pinar\UretimKatalog\UretimKatalog.Domain\bin\Debug\net8.0\UretimKatalog.Domain.dll
+c:\Users\pinar\UretimKatalog\UretimKatalog.Domain\bin\Debug\net8.0\UretimKatalog.Domain.pdb
+c:\Users\pinar\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\pinar\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.AssemblyInfoInputs.cache
+c:\Users\pinar\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.AssemblyInfo.cs
+c:\Users\pinar\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.csproj.CoreCompileInputs.cache
+c:\Users\pinar\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.sourcelink.json
+c:\Users\pinar\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.dll
+c:\Users\pinar\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\refint\UretimKatalog.Domain.dll
+c:\Users\pinar\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\UretimKatalog.Domain.pdb
+C:\Users\pinar\UretimKatalog\UretimKatalog.Domain\obj\Debug\net8.0\ref\UretimKatalog.Domain.dll

@@ -1,45 +1,79 @@
 using System;
 using System.Text;
-using System.Security.Claims;                 
-using Microsoft.Extensions.Configuration;       
-using Microsoft.IdentityModel.Tokens;          
-using System.IdentityModel.Tokens.Jwt;         
-using UretimKatalog.Application.DTOs;
-using UretimKatalog.Application.Interfaces;
+using System.Threading.Tasks;
+using System.Security.Claims;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using UretimKatalog.Application.Contracts.Identity;
+using UretimKatalog.Application.Features.Auth.Requests.Commands;
+using UretimKatalog.Application.Features.Auth.Result;
+using UretimKatalog.Domain.Interfaces;
+using UretimKatalog.Domain.Models;
+using AutoMapper;
 
 namespace UretimKatalog.Application.Services
 {
     public class AuthService : IAuthService
     {
-        private readonly IConfiguration _config;
-        public AuthService(IConfiguration config) => _config = config;
+        private readonly IUnitOfWork    _uow;
+        private readonly IConfiguration _cfg;
+        private readonly IMapper        _map;
 
-        public Task<TokenResponseDto> AuthenticateAsync(LoginDto login)
+        public AuthService(IUnitOfWork uow, IConfiguration cfg, IMapper map)
         {
-            // DTO’daki özelliğe uyacak şekilde:
-            if (login.Username != "username" || login.Password != "password")
-                throw new UnauthorizedAccessException("Geçersiz kullanıcı veya parola");
+            _uow  = uow;
+            _cfg  = cfg;
+            _map  = map;
+        }
 
-            var key     = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
-            var creds   = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            var expires = DateTime.UtcNow.AddMinutes(int.Parse(_config["Jwt:ExpireMinutes"]));
-            
-            // Username olarak claim ekliyoruz
-            var claims  = new[] { new Claim(JwtRegisteredClaimNames.Sub, login.Username) };
+        /* ---------- REGISTER ---------- */
+        public async Task<RegisterResult> RegisterAsync(RegisterCommand req)
+        {
+            if (await _uow.Users.GetByEmailAsync(req.Email) is not null)
+                throw new InvalidOperationException("Bu e-posta ile zaten kullanıcı var.");
+
+            var user = _map.Map<User>(req);
+            user.Password = BCrypt.Net.BCrypt.HashPassword(req.Password);
+
+            await _uow.Users.AddAsync(user);
+            await _uow.CommitAsync();
+
+            return _map.Map<RegisterResult>(user);
+        }
+
+        /* ---------- LOGIN ---------- */
+        public async Task<LoginResult> LoginAsync(LoginCommand req)
+        {
+            var user = await _uow.Users.GetByEmailAsync(req.Email)
+                       ?? throw new UnauthorizedAccessException("E-posta veya şifre hatalı.");
+
+            if (!BCrypt.Net.BCrypt.Verify(req.Password, user.Password))
+                throw new UnauthorizedAccessException("E-posta veya şifre hatalı.");
+
+            var result = _map.Map<LoginResult>(user);
+            result.Token = GenerateJwtToken(user);
+            return result;
+        }
+
+        /* ---------- helper ---------- */
+        private string GenerateJwtToken(User user)
+        {
+            var key   = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_cfg["Jwt:Key"]));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                issuer: _config["Jwt:Issuer"],
-                audience: _config["Jwt:Audience"],
-                claims: claims,
-                expires: expires,
-                signingCredentials: creds
-            );
+                issuer:  _cfg["Jwt:Issuer"],
+                audience:_cfg["Jwt:Audience"],
+                claims: new[]
+                {
+                    new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                },
+                expires: DateTime.UtcNow.AddMinutes(int.Parse(_cfg["Jwt:ExpireMinutes"])),
+                signingCredentials: creds);
 
-            return Task.FromResult(new TokenResponseDto
-            {
-                Token     = new JwtSecurityTokenHandler().WriteToken(token),
-                ExpiresAt = expires
-            });
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }

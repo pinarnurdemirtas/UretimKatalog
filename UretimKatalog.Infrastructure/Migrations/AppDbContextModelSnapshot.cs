@@ -57,13 +57,13 @@ namespace UretimKatalog.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2025, 7, 10, 10, 33, 9, 124, DateTimeKind.Utc).AddTicks(7323),
+                            CreatedAt = new DateTime(2025, 7, 13, 14, 23, 29, 12, DateTimeKind.Utc).AddTicks(6359),
                             Name = "Elektronik"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2025, 7, 10, 10, 33, 9, 124, DateTimeKind.Utc).AddTicks(7329),
+                            CreatedAt = new DateTime(2025, 7, 13, 14, 23, 29, 12, DateTimeKind.Utc).AddTicks(6374),
                             Name = "Kitap"
                         });
                 });
@@ -110,7 +110,7 @@ namespace UretimKatalog.Infrastructure.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2025, 7, 10, 10, 33, 9, 124, DateTimeKind.Utc).AddTicks(7742),
+                            CreatedAt = new DateTime(2025, 7, 13, 14, 23, 29, 12, DateTimeKind.Utc).AddTicks(6916),
                             IsActive = true,
                             Name = "Telefon",
                             Price = 1500m,
@@ -120,7 +120,7 @@ namespace UretimKatalog.Infrastructure.Migrations
                         {
                             Id = 2,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2025, 7, 10, 10, 33, 9, 124, DateTimeKind.Utc).AddTicks(7748),
+                            CreatedAt = new DateTime(2025, 7, 13, 14, 23, 29, 12, DateTimeKind.Utc).AddTicks(6932),
                             IsActive = true,
                             Name = "Roman",
                             Price = 50m,
@@ -161,6 +161,42 @@ namespace UretimKatalog.Infrastructure.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductImages");
+                });
+
+            modelBuilder.Entity("UretimKatalog.Domain.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("UretimKatalog.Domain.Models.Category", b =>

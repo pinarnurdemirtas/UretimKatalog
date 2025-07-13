@@ -6,7 +6,6 @@ using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using UretimKatalog.Api.Middleware;
-using UretimKatalog.Application.Mappings;
 using UretimKatalog.Application.Interfaces;
 using UretimKatalog.Application.Services;
 using UretimKatalog.Infrastructure.Data;
@@ -14,25 +13,40 @@ using UretimKatalog.Infrastructure.UnitOfWork;
 using UretimKatalog.Infrastructure.Repositories;
 using UretimKatalog.Domain.Interfaces;
 using UretimKatalog.Api.Endpoints;
-using UretimKatalog.Application.Features.Auth.Commands;   
-using UretimKatalog.Application.Features.Products.Commands;   
-
+using UretimKatalog.Application.Contracts.Identity;
+using UretimKatalog.Application.Features.Auth.Mapping;
 using MediatR;
+using Microsoft.AspNetCore.Diagnostics;
 using System.Reflection;
+using UretimKatalog.Application.Behaviors;
+using UretimKatalog.Application.Features.Auth.Handlers.Commands;
+using UretimKatalog.Application.Features.Auth.Validators.Commands;
+using UretimKatalog.Application.Middleware;
+using UretimKatalog.Application.Features.Product.Validators.Commands;
+using UretimKatalog.Application.Features.Product.Validators.Queries;
+using UretimKatalog.Application.Features.Product.Requests.Queries;
+using UretimKatalog.Application.Features.Product.Handlers.Queries;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 
-builder.Services.AddMediatR(cfg =>
-{
-    cfg.RegisterServicesFromAssemblies(
-        Assembly.GetAssembly(typeof(CreateProductCommandHandler))!,
-        Assembly.GetAssembly(typeof(DeleteProductCommandHandler))!,
-        Assembly.GetAssembly(typeof(UpdateProductCommandHandler))!,
-        Assembly.GetAssembly(typeof(AuthenticateCommandHandler))!
-    );
-});
+builder.Services.AddMediatR(
+    Assembly.GetExecutingAssembly(),
+    typeof(ProductCommandHandler).Assembly,
+    typeof(ProductQueryHandler).Assembly,
+    typeof(AuthCommandHandler).Assembly
+);
+
+builder.Services.AddLocalization();
+
+builder.Services.AddValidatorsFromAssemblyContaining<CreateProductCommandValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<GetProductByIdValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<LoginValidator>();
+builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
+
 
 var connectionString = builder.Configuration.GetConnectionString("Default");
 
@@ -46,13 +60,14 @@ builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductImageRepository, ProductImageRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductImageService, ProductImageService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 
-builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(AuthProfile).Assembly);
 
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -116,20 +131,37 @@ var app = builder.Build();
 builder.WebHost.UseWebRoot("wwwroot");
 app.UseStaticFiles();
 
-app.UseMiddleware<ExceptionMiddleware>();
+app.UseMiddleware<ErrorHandlerMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-        app.UseDeveloperExceptionPage();    // Burada gerçek istisna mesajını görebilirsiniz
-
 }
 
 else
 {
-    app.UseExceptionHandler("/error");  // Prod ortam için custom handler
+    app.UseExceptionHandler(appErr =>
+    {
+        appErr.Run(async ctx =>
+        {
+            var ex = ctx.Features.Get<IExceptionHandlerFeature>()?.Error;
+            if (ex is ValidationException ve)
+            {
+                ctx.Response.StatusCode = StatusCodes.Status400BadRequest;
+                await ctx.Response.WriteAsJsonAsync(new
+                {
+                    Message = "Validation failed",
+                    Errors = ve.Errors.Select(e => new { e.PropertyName, e.ErrorMessage })
+                });
+                return;
+            }
+            // Diğer hatalar…
+        });
+    });
 }
+
+
 
 app.UseHttpsRedirection();
 
