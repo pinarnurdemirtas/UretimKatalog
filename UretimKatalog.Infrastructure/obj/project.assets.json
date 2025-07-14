@@ -2706,11 +2706,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
       "projectName": "UretimKatalog.Infrastructure",
-      "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pinarnurdemirtas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2725,11 +2725,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
-              "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
+            "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
+              "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
             },
-            "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
-              "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
+            "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
+              "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
             }
           }
         }
