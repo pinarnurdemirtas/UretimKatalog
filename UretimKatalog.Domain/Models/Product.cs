@@ -11,6 +11,9 @@ namespace UretimKatalog.Domain.Models
         public int CategoryId { get; set; }
         public Category Category { get; set; } = null!;
         public ICollection<ProductImage> Images { get; set; } = new List<ProductImage>();
+        public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+        
+
         
     }
 }

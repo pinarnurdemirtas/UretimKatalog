@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UretimKatalog.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7dddb7c0cbea1fd8f0e2fe8abf4d23ed51de610e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f331368b5987ffc0712ded90fca2000769cfe3a")]
 [assembly: System.Reflection.AssemblyProductAttribute("UretimKatalog.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UretimKatalog.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

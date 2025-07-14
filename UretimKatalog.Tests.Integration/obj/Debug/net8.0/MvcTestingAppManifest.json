@@ -2,5 +2,7 @@
   "UretimKatalog.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api",
   "UretimKatalog.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application",
   "UretimKatalog.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain",
-  "UretimKatalog.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure"
+  "UretimKatalog.Identity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Identity",
+  "UretimKatalog.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure",
+  "UretimKatalog.Persistence, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Persistence"
 }

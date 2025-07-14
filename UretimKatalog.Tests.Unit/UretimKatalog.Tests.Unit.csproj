@@ -22,6 +22,8 @@
     <ProjectReference Include="..\UretimKatalog.Application\UretimKatalog.Application.csproj" />
     <ProjectReference Include="..\UretimKatalog.Infrastructure\UretimKatalog.Infrastructure.csproj" />
     <ProjectReference Include="..\UretimKatalog.Domain\UretimKatalog.Domain.csproj" />
+    <ProjectReference Include="..\UretimKatalog.Identity\UretimKatalog.Identity.csproj" />
+    <ProjectReference Include="..\UretimKatalog.Persistence\UretimKatalog.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

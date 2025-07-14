@@ -6,10 +6,14 @@ C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\bin\Debug\net8.
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\bin\Debug\net8.0\UretimKatalog.Tests.Unit.pdb
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\bin\Debug\net8.0\UretimKatalog.Application.dll
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\bin\Debug\net8.0\UretimKatalog.Domain.dll
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\bin\Debug\net8.0\UretimKatalog.Identity.dll
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\bin\Debug\net8.0\UretimKatalog.Infrastructure.dll
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\bin\Debug\net8.0\UretimKatalog.Persistence.dll
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\bin\Debug\net8.0\UretimKatalog.Application.pdb
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\bin\Debug\net8.0\UretimKatalog.Infrastructure.pdb
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\bin\Debug\net8.0\UretimKatalog.Domain.pdb
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\bin\Debug\net8.0\UretimKatalog.Identity.pdb
+C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\bin\Debug\net8.0\UretimKatalog.Persistence.pdb
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\obj\Debug\net8.0\UretimKatalog.Tests.Unit.csproj.AssemblyReference.cache
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\obj\Debug\net8.0\UretimKatalog.Tests.Unit.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Tests.Unit\obj\Debug\net8.0\UretimKatalog.Tests.Unit.AssemblyInfoInputs.cache

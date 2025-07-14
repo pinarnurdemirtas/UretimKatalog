@@ -1,7 +1,8 @@
 using MediatR;
-using UretimKatalog.Api.Models;
-using UretimKatalog.Application.DTOs;
-using UretimKatalog.Application.Features.Auth.Commands;  
+using Microsoft.AspNetCore.Builder;
+using UretimKatalog.Application.Features.Auth.Requests.Commands;
+using UretimKatalog.Application.Features.Auth.Result;
+using UretimKatalog.Api.Models; 
 
 namespace UretimKatalog.Api.Endpoints
 {
@@ -9,16 +10,23 @@ namespace UretimKatalog.Api.Endpoints
     {
         public static RouteGroupBuilder MapAuth(this WebApplication app)
         {
-            var group = app.MapGroup("/api/auth");
-
-            group.MapPost("/login", async (IMediator mediator, LoginDto dto) =>
-            {
-                //dto yerine dto.Username ve dto.Password gönderiyoruz
-                var token = await mediator.Send(new AuthenticateCommand(dto.Username, dto.Password));
-                return Results.Ok(ApiResponse<TokenResponseDto>.Ok(token));
-            })
-            .WithName("Login")
+            var group = app
+            .MapGroup("/api/auth")
             .WithTags("Auth");
+
+            group.MapPost("/login", async (LoginCommand cmd, IMediator mediator) =>
+            {
+                var result = await mediator.Send(cmd);               
+                return Results.Ok(ApiResponse<LoginResult>.Ok(result));
+            });
+
+         
+            group.MapPost("/register", async (RegisterCommand cmd, IMediator mediator) =>
+            {
+                var result = await mediator.Send(cmd);               
+                return Results.Created($"/api/users/{result.Id}",
+                                        ApiResponse<RegisterResult>.Ok(result));
+            });
 
             return group;
         }

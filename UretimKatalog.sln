@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UretimKatalog.Tests.Unit", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UretimKatalog.Tests.Integration", "UretimKatalog.Tests.Integration\UretimKatalog.Tests.Integration.csproj", "{D36A93FE-880C-4D7B-BC7F-D6973029BD44}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UretimKatalog.Identity", "UretimKatalog.Identity\UretimKatalog.Identity.csproj", "{584F9AE2-6002-4264-A6A8-841674DE9E76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UretimKatalog.Persistence", "UretimKatalog.Persistence\UretimKatalog.Persistence.csproj", "{55A50844-5542-4984-9320-F81F66BF57B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +52,13 @@ Global
 		{D36A93FE-880C-4D7B-BC7F-D6973029BD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D36A93FE-880C-4D7B-BC7F-D6973029BD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D36A93FE-880C-4D7B-BC7F-D6973029BD44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{584F9AE2-6002-4264-A6A8-841674DE9E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{584F9AE2-6002-4264-A6A8-841674DE9E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{584F9AE2-6002-4264-A6A8-841674DE9E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{584F9AE2-6002-4264-A6A8-841674DE9E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55A50844-5542-4984-9320-F81F66BF57B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55A50844-5542-4984-9320-F81F66BF57B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55A50844-5542-4984-9320-F81F66BF57B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55A50844-5542-4984-9320-F81F66BF57B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -2,9 +2,9 @@ using System;
 using System.Threading.Tasks;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
-using UretimKatalog.Infrastructure.Data;        // AppDbContext
-using UretimKatalog.Infrastructure.Repositories; // ProductRepository
-using UretimKatalog.Domain.Models;              // Product
+using UretimKatalog.Identity.Data;        
+using UretimKatalog.Persistence.Repositories;
+using UretimKatalog.Domain.Models;              
 using Xunit;
 
 namespace UretimKatalog.Tests.Unit.Repository

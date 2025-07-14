@@ -1,7 +1,13 @@
-public class CreateProductImageDto
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+
+namespace UretimKatalog.Application.DTOs
 {
-    public int    ProductId { get; set; }
-    public string FileName  { get; set; }
-    public string Url       { get; set; }
-    public bool   IsMain    { get; set; }
+    public class CreateProductImageDto
+    {
+        public int ProductId { get; set; }
+        public IFormFile File { get; set; } = null!;
+        public bool IsMain { get; set; }
+    }
 }

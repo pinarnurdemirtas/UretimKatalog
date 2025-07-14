@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DMoxjTF4JR19rFMmkVNDKeMApTth0l5dbpNH+Y1qDzE=",
+  "Hash": "QTIDP/t1Y2vq3xqdS6u377+NxSEBejoLB5WUNBcJkHY=",
   "Source": "UretimKatalog.Api",
   "BasePath": "_content/UretimKatalog.Api",
   "Mode": "Default",
@@ -10,87 +10,10 @@
     {
       "Name": "UretimKatalog.Api\\wwwroot",
       "Source": "UretimKatalog.Api",
-      "ContentRoot": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\",
       "BasePath": "_content/UretimKatalog.Api",
       "Pattern": "**"
     }
   ],
-  "Assets": [
-    {
-      "Identity": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\uploads\\products\\1\\93d2abc6-8a51-4536-9d0d-0c2e0408431f.jpg",
-      "SourceId": "UretimKatalog.Api",
-      "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\",
-      "BasePath": "_content/UretimKatalog.Api",
-      "RelativePath": "uploads/products/1/93d2abc6-8a51-4536-9d0d-0c2e0408431f.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\1\\93d2abc6-8a51-4536-9d0d-0c2e0408431f.jpg"
-    },
-    {
-      "Identity": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\uploads\\products\\1\\d1e15e5f-e878-4e51-89e2-f9278cc9f0c3.jpg",
-      "SourceId": "UretimKatalog.Api",
-      "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\",
-      "BasePath": "_content/UretimKatalog.Api",
-      "RelativePath": "uploads/products/1/d1e15e5f-e878-4e51-89e2-f9278cc9f0c3.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\1\\d1e15e5f-e878-4e51-89e2-f9278cc9f0c3.jpg"
-    },
-    {
-      "Identity": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\uploads\\products\\1\\efaa9c19-6b2a-4055-b654-1be431591015.jpg",
-      "SourceId": "UretimKatalog.Api",
-      "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\",
-      "BasePath": "_content/UretimKatalog.Api",
-      "RelativePath": "uploads/products/1/efaa9c19-6b2a-4055-b654-1be431591015.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\1\\efaa9c19-6b2a-4055-b654-1be431591015.jpg"
-    },
-    {
-      "Identity": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\uploads\\products\\1\\ff87b2b7-673c-42a3-a8e5-c6f481392095.jpg",
-      "SourceId": "UretimKatalog.Api",
-      "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\",
-      "BasePath": "_content/UretimKatalog.Api",
-      "RelativePath": "uploads/products/1/ff87b2b7-673c-42a3-a8e5-c6f481392095.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\products\\1\\ff87b2b7-673c-42a3-a8e5-c6f481392095.jpg"
-    }
-  ]
+  "Assets": []
 }
