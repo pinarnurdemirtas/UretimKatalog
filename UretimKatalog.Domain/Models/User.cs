@@ -8,6 +8,8 @@ namespace UretimKatalog.Domain.Models
         public string Email { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
         public ICollection<Order> Orders { get; set; } = new List<Order>();
+        public ICollection<Review> Reviews { get; set; } = new List<Review>();
+
 
     }
 }

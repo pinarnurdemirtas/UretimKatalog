@@ -11,12 +11,12 @@ namespace UretimKatalog.Identity.Services
     public class OrderService : IOrderService
     {
         private readonly IUnitOfWork _uow;
-        private readonly IMapper     _mapper;
+        private readonly IMapper _mapper;
 
         public OrderService(IUnitOfWork uow, IMapper mapper)
         {
-            _uow     = uow;
-            _mapper  = mapper;
+            _uow = uow;
+            _mapper = mapper;
         }
 
         public async Task<int> CreateAsync(CreateOrderDto dto)
@@ -28,5 +28,13 @@ namespace UretimKatalog.Identity.Services
 
             return order.Id;
         }
+        public async Task DeleteAsync(int id)
+        {
+            var order = await _uow.Orders.GetByIdAsync(id)
+                         ?? throw new KeyNotFoundException($"Sipariş (ID:{id}) bulunamadı");
+            _uow.Orders.Remove(order);
+            await _uow.CommitAsync();
+        }
+
     }
 }

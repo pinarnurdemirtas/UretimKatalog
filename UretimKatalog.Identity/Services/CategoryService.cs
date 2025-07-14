@@ -28,7 +28,6 @@ namespace UretimKatalog.Identity.Services
         }
 
 
-
         public async Task UpdateAsync(UpdateCategoryDto dto)
         {
             var entity = await _uow.Categories.GetByIdAsync(dto.Id)

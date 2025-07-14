@@ -28,6 +28,7 @@ using UretimKatalog.Application.Features.Product.Handlers.Commands;
 using UretimKatalog.Identity.Services;
 using UretimKatalog.Persistence.Repositories;
 using UretimKatalog.Persistence.UnitOfWork;
+using UretimKatalog.Application.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -60,6 +61,7 @@ builder.Services.AddFluentValidationAutoValidation();
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IProductImageRepository, ProductImageRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
@@ -69,7 +71,7 @@ builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductImageService, ProductImageService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
-
+builder.Services.AddScoped<IReviewService, ReviewService>();
 builder.Services.AddAutoMapper(typeof(AuthProfile).Assembly);
 
 builder.Services
@@ -176,6 +178,7 @@ app.MapAuth();
 app.MapProducts();
 app.MapCategories();
 app.MapOrders();
+app.MapReviews();
 
 app.Run();
 

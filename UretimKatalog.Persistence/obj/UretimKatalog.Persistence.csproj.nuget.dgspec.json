@@ -4,14 +4,14 @@
     "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Persistence\\UretimKatalog.Persistence.csproj": {}
   },
   "projects": {
-    "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
+    "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj",
+        "projectUniqueName": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj",
         "projectName": "UretimKatalog.Application",
-        "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj",
+        "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj",
         "packagesPath": "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\obj\\",
+        "outputPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pinarnurdemirtas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
-                "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
+              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
               }
             }
           }
@@ -107,14 +107,14 @@
         }
       }
     },
-    "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
+    "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj",
         "projectName": "UretimKatalog.Domain",
-        "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj",
+        "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj",
         "packagesPath": "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\obj\\",
+        "outputPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pinarnurdemirtas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -182,11 +182,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
-                "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
+              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
+                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
               },
-              "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
-                "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
+              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
               }
             }
           }
@@ -276,11 +276,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
-                "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
+              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
+                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
               },
-              "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
-                "projectPath": "c:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
+              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
               },
               "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Identity\\UretimKatalog.Identity.csproj": {
                 "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Identity\\UretimKatalog.Identity.csproj"

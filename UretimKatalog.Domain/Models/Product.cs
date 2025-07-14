@@ -12,7 +12,7 @@ namespace UretimKatalog.Domain.Models
         public Category Category { get; set; } = null!;
         public ICollection<ProductImage> Images { get; set; } = new List<ProductImage>();
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
-        
+        public ICollection<Review> Reviews { get; set; } = new List<Review>();
 
         
     }

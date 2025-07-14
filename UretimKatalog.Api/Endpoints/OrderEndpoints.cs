@@ -2,6 +2,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using UretimKatalog.Application.DTOs;
+using UretimKatalog.Application.Features.Orders.Commands;
 using UretimKatalog.Application.Features.Orders.Requests.Commands;
 using UretimKatalog.Application.Features.Orders.Responses;
 
@@ -21,6 +22,14 @@ namespace UretimKatalog.Api.Endpoints
             {
                 CreateOrderResult res = await m.Send(cmd);
                 return Results.Created($"/api/orders/{res.Id}", res);
+            });
+
+            
+            g.MapDelete("/{id:int}", async (int id, IMediator m) =>
+            {
+                var cmd = new DeleteOrderCommand(id);
+                await m.Send(cmd);
+                return Results.NoContent();
             });
 
 

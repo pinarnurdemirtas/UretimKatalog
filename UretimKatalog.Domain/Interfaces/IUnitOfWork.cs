@@ -10,6 +10,7 @@ namespace UretimKatalog.Domain.Interfaces
     IProductImageRepository ProductImages { get; }
     IUserRepository Users { get; }
     IOrderRepository Orders { get; }
+    IReviewRepository Reviews { get; } 
     Task<int> CommitAsync();
 }
 
