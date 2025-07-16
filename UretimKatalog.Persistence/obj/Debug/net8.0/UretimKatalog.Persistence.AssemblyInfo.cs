@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UretimKatalog.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2efd09b211884d786f497c3db40a699a2bb482df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d28b27d52899325522d54dd0195fc075bfd18cc8")]
 [assembly: System.Reflection.AssemblyProductAttribute("UretimKatalog.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UretimKatalog.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
