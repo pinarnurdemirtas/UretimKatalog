@@ -7,8 +7,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using UretimKatalog.Api.Middleware;
 using UretimKatalog.Application.Interfaces;
-using UretimKatalog.Identity.Data;
-using UretimKatalog.Identity.Data.Configurations;
 using UretimKatalog.Domain.Interfaces;
 using UretimKatalog.Api.Endpoints;
 using UretimKatalog.Application.Contracts.Identity;
@@ -25,10 +23,11 @@ using UretimKatalog.Application.Features.Product.Validators.Queries;
 using UretimKatalog.Application.Features.Product.Requests.Queries;
 using UretimKatalog.Application.Features.Product.Handlers.Queries;
 using UretimKatalog.Application.Features.Product.Handlers.Commands;
-using UretimKatalog.Identity.Services;
 using UretimKatalog.Persistence.Repositories;
 using UretimKatalog.Persistence.UnitOfWork;
 using UretimKatalog.Application.Services;
+using UretimKatalog.Persistence.Data;
+using UretimKatalog.Infrastructure.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);

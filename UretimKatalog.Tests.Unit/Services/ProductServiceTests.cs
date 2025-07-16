@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using FluentAssertions;
 using Moq;
 using AutoMapper;
-using UretimKatalog.Identity.Services;
+using UretimKatalog.Infrastructure.Services;
 using UretimKatalog.Application.DTOs;
 using UretimKatalog.Domain.Interfaces;
 using UretimKatalog.Domain.Models;

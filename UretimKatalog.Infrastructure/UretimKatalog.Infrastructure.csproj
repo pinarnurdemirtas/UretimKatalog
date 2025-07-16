@@ -9,7 +9,6 @@
     <ProjectReference Include="..\UretimKatalog.Domain\UretimKatalog.Domain.csproj" />
     <ProjectReference Include="..\UretimKatalog.Application\UretimKatalog.Application.csproj" />
     <ProjectReference Include="..\UretimKatalog.Persistence\UretimKatalog.Persistence.csproj" />
-    <ProjectReference Include="..\UretimKatalog.Identity\UretimKatalog.Identity.csproj" />
   </ItemGroup>
 
   <ItemGroup>

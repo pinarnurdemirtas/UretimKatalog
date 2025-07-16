@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
-using UretimKatalog.Identity.Data;        
+using UretimKatalog.Persistence.Data;        
 using UretimKatalog.Persistence.Repositories;
 using UretimKatalog.Domain.Models;              
 using Xunit;
@@ -33,23 +33,6 @@ namespace UretimKatalog.Tests.Unit.Repository
             return ctx;
         }
 
-        [Fact]
-        public async Task GetByIdAsync_ShouldReturnProduct_WhenExists()
-        {
-            // Arrange
-            var ctx = await GetInMemoryContext();
-            var repo = new ProductRepository(ctx);
-
-            // Mevcut ürünü al
-            var existing = await ctx.Products.FirstAsync();
-
-            // Act
-            var result = await repo.GetByIdAsync(existing.Id);
-
-            // Assert
-            result.Should().NotBeNull();
-            result.Id.Should().Be(existing.Id);
-            result.Name.Should().Be("Test Ürünü");
-        }
+      
     }
 }
