@@ -1220,12 +1220,18 @@
           "UretimKatalog.Domain": "1.0.0"
         },
         "runtime": {
-          "UretimKatalog.Application.dll": {}
+          "UretimKatalog.Application.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "UretimKatalog.Domain/1.0.0": {
         "runtime": {
-          "UretimKatalog.Domain.dll": {}
+          "UretimKatalog.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "UretimKatalog.Persistence/1.0.0": {
@@ -1237,7 +1243,10 @@
           "UretimKatalog.Domain": "1.0.0"
         },
         "runtime": {
-          "UretimKatalog.Persistence.dll": {}
+          "UretimKatalog.Persistence.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj": {}
+    "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
+    "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj",
+        "projectUniqueName": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj",
         "projectName": "UretimKatalog.Application",
-        "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj",
-        "packagesPath": "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\obj\\",
+        "projectPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj",
+        "packagesPath": "C:\\Users\\elif_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pinarnurdemirtas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\elif_\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
-                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
+              "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
               }
             }
           }
@@ -36,6 +36,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -103,21 +108,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.117/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
+    "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj",
         "projectName": "UretimKatalog.Domain",
-        "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj",
-        "packagesPath": "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\obj\\",
+        "projectPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj",
+        "packagesPath": "C:\\Users\\elif_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pinarnurdemirtas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\elif_\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -135,6 +140,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -156,21 +166,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.117/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj": {
+    "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
         "projectName": "UretimKatalog.Infrastructure",
-        "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Infrastructure\\UretimKatalog.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\elif_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pinarnurdemirtas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\elif_\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -182,14 +192,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
-                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
+              "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
+                "projectPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
               },
-              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
-                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
+              "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
               },
-              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Persistence\\UretimKatalog.Persistence.csproj": {
-                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Persistence\\UretimKatalog.Persistence.csproj"
+              "c:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Persistence\\UretimKatalog.Persistence.csproj": {
+                "projectPath": "c:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Persistence\\UretimKatalog.Persistence.csproj"
               }
             }
           }
@@ -198,6 +208,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -260,21 +275,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.117/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Persistence\\UretimKatalog.Persistence.csproj": {
+    "c:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Persistence\\UretimKatalog.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Persistence\\UretimKatalog.Persistence.csproj",
+        "projectUniqueName": "c:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Persistence\\UretimKatalog.Persistence.csproj",
         "projectName": "UretimKatalog.Persistence",
-        "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Persistence\\UretimKatalog.Persistence.csproj",
-        "packagesPath": "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Persistence\\obj\\",
+        "projectPath": "c:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Persistence\\UretimKatalog.Persistence.csproj",
+        "packagesPath": "C:\\Users\\elif_\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pinarnurdemirtas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\elif_\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -286,11 +301,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
-                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
+              "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj": {
+                "projectPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Application\\UretimKatalog.Application.csproj"
               },
-              "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
-                "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
+              "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj": {
+                "projectPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Domain\\UretimKatalog.Domain.csproj"
               }
             }
           }
@@ -299,6 +314,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -340,7 +360,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.117/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

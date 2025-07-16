@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QTIDP/t1Y2vq3xqdS6u377+NxSEBejoLB5WUNBcJkHY=",
+  "Hash": "MJqVAlhb3lKyDtYJfsi+SY1oO7ZiGQhV5kSlWXvK9Zw=",
   "Source": "UretimKatalog.Api",
   "BasePath": "_content/UretimKatalog.Api",
   "Mode": "Default",
@@ -10,10 +10,30 @@
     {
       "Name": "UretimKatalog.Api\\wwwroot",
       "Source": "UretimKatalog.Api",
-      "ContentRoot": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\",
+      "ContentRoot": "c:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\",
       "BasePath": "_content/UretimKatalog.Api",
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "c:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\desktop.ini",
+      "SourceId": "UretimKatalog.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\",
+      "BasePath": "_content/UretimKatalog.Api",
+      "RelativePath": "desktop.ini",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\desktop.ini"
+    }
+  ]
 }

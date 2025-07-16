@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "c:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\UretimKatalog.Api\\wwwroot\\desktop.ini",
+      "PackagePath": "staticwebassets\\desktop.ini"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.UretimKatalog.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.UretimKatalog.Api.props",
+      "PackagePath": "build\\UretimKatalog.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.UretimKatalog.Api.props",
+      "PackagePath": "buildMultiTargeting\\UretimKatalog.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.UretimKatalog.Api.props",
+      "PackagePath": "buildTransitive\\UretimKatalog.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

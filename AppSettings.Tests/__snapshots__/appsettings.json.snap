@@ -1,0 +1,19 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "Default": "Server=localhost;Port=3306;Database=UretimKatalogDb;User=root;Password=Pinarbm18_"
+  },
+  "Jwt": {
+  "Key": "JwtKeyAnahtarıJwtKeyAnahtarıJwtKeyAnahtarı",
+  "Issuer": "https://localhost:5175",
+  "Audience": "orderservice",
+  "ExpireMinutes": 60
+},
+
+  "AllowedHosts": "*"
+}

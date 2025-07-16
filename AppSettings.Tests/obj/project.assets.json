@@ -365,15 +365,15 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/13.0.1": {
+      "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         }
@@ -555,6 +555,40 @@
           "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so": {
             "assetType": "native",
             "rid": "ubuntu.16.10-x64"
+          }
+        }
+      },
+      "Snapshooter/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "lib/net8.0/Snapshooter.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Snapshooter.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Snapshooter.Xunit/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Snapshooter": "1.0.1",
+          "xunit.assert": "2.4.2",
+          "xunit.core": "2.4.2"
+        },
+        "compile": {
+          "lib/net8.0/Snapshooter.Xunit.dll": {
+            "related": ".pdb;.runtimeconfig.json"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Snapshooter.Xunit.dll": {
+            "related": ".pdb;.runtimeconfig.json"
           }
         }
       },
@@ -1657,10 +1691,9 @@
           "buildMultiTargeting/xunit.core.targets": {}
         }
       },
-      "xunit.extensibility.core/2.4.2": {
+      "xunit.extensibility.core/2.9.3": {
         "type": "package",
         "dependencies": {
-          "NETStandard.Library": "1.6.1",
           "xunit.abstractions": "2.0.3"
         },
         "compile": {
@@ -1674,11 +1707,10 @@
           }
         }
       },
-      "xunit.extensibility.execution/2.4.2": {
+      "xunit.extensibility.execution/2.9.3": {
         "type": "package",
         "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "xunit.extensibility.core": "[2.4.2]"
+          "xunit.extensibility.core": "[2.9.3]"
         },
         "compile": {
           "lib/netstandard1.1/xunit.execution.dotnet.dll": {
@@ -2046,14 +2078,15 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/13.0.1": {
-      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
-      "path": "newtonsoft.json/13.0.1",
+      "path": "newtonsoft.json/13.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
+        "README.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -2062,13 +2095,15 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
@@ -2310,6 +2345,56 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
+      ]
+    },
+    "Snapshooter/1.0.1": {
+      "sha512": "Nwto0wB33ZMQ6AuqKLG+55e86fID1XYq/wwZ2zqJBCImy7SOv5AaykCHXCX7/O4faMIWpRkMU3b13If7OxJOJg==",
+      "type": "package",
+      "path": "snapshooter/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/Snapshooter.dll",
+        "lib/net462/Snapshooter.pdb",
+        "lib/net462/Snapshooter.xml",
+        "lib/net6.0/Snapshooter.dll",
+        "lib/net6.0/Snapshooter.pdb",
+        "lib/net6.0/Snapshooter.xml",
+        "lib/net8.0/Snapshooter.dll",
+        "lib/net8.0/Snapshooter.pdb",
+        "lib/net8.0/Snapshooter.xml",
+        "lib/net9.0/Snapshooter.dll",
+        "lib/net9.0/Snapshooter.pdb",
+        "lib/net9.0/Snapshooter.xml",
+        "lib/netstandard2.0/Snapshooter.dll",
+        "lib/netstandard2.0/Snapshooter.pdb",
+        "lib/netstandard2.0/Snapshooter.xml",
+        "snapshooter.1.0.1.nupkg.sha512",
+        "snapshooter.nuspec"
+      ]
+    },
+    "Snapshooter.Xunit/1.0.1": {
+      "sha512": "x3X0GhM/9c718S7aDMpummHhLLS06mnowCjTdHZOcmCqgj1jedUR8HpV05pzXTpmS/nSxwZoiO7zF3xh+uyBOQ==",
+      "type": "package",
+      "path": "snapshooter.xunit/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/Snapshooter.Xunit.dll",
+        "lib/net462/Snapshooter.Xunit.pdb",
+        "lib/net6.0/Snapshooter.Xunit.dll",
+        "lib/net6.0/Snapshooter.Xunit.pdb",
+        "lib/net6.0/Snapshooter.Xunit.runtimeconfig.json",
+        "lib/net8.0/Snapshooter.Xunit.dll",
+        "lib/net8.0/Snapshooter.Xunit.pdb",
+        "lib/net8.0/Snapshooter.Xunit.runtimeconfig.json",
+        "lib/net9.0/Snapshooter.Xunit.dll",
+        "lib/net9.0/Snapshooter.Xunit.pdb",
+        "lib/net9.0/Snapshooter.Xunit.runtimeconfig.json",
+        "lib/netstandard2.0/Snapshooter.Xunit.dll",
+        "lib/netstandard2.0/Snapshooter.Xunit.pdb",
+        "snapshooter.xunit.1.0.1.nupkg.sha512",
+        "snapshooter.xunit.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -5373,13 +5458,14 @@
         "xunit.core.nuspec"
       ]
     },
-    "xunit.extensibility.core/2.4.2": {
-      "sha512": "W1BoXTIN1C6kpVSMw25huSet25ky6IAQUNovu3zGOGN/jWnbgSoTyCrlIhmXSg0tH5nEf8q7h3OjNHOjyu5PfA==",
+    "xunit.extensibility.core/2.9.3": {
+      "sha512": "kf3si0YTn2a8J8eZNb+zFpwfoyvIrQ7ivNk5ZYA5yuYk1bEtMe4DxJ2CF/qsRgmEnDr7MnW1mxylBaHTZ4qErA==",
       "type": "package",
-      "path": "xunit.extensibility.core/2.4.2",
+      "path": "xunit.extensibility.core/2.9.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "_content/README.md",
         "_content/logo-128-transparent.png",
         "lib/net452/xunit.core.dll",
         "lib/net452/xunit.core.dll.tdnet",
@@ -5388,23 +5474,24 @@
         "lib/net452/xunit.runner.utility.net452.dll",
         "lib/netstandard1.1/xunit.core.dll",
         "lib/netstandard1.1/xunit.core.xml",
-        "xunit.extensibility.core.2.4.2.nupkg.sha512",
+        "xunit.extensibility.core.2.9.3.nupkg.sha512",
         "xunit.extensibility.core.nuspec"
       ]
     },
-    "xunit.extensibility.execution/2.4.2": {
-      "sha512": "CZmgcKkwpyo8FlupZdWpJCryrAOWLh1FBPG6gmVZuPQkGQsim/oL4PcP4nfrC2hHgXUFtluvaJ0Sp9PQKUMNpg==",
+    "xunit.extensibility.execution/2.9.3": {
+      "sha512": "yMb6vMESlSrE3Wfj7V6cjQ3S4TXdXpRqYeNEI3zsX31uTsGMJjEw6oD5F5u1cHnMptjhEECnmZSsPxB6ChZHDQ==",
       "type": "package",
-      "path": "xunit.extensibility.execution/2.4.2",
+      "path": "xunit.extensibility.execution/2.9.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "_content/README.md",
         "_content/logo-128-transparent.png",
         "lib/net452/xunit.execution.desktop.dll",
         "lib/net452/xunit.execution.desktop.xml",
         "lib/netstandard1.1/xunit.execution.dotnet.dll",
         "lib/netstandard1.1/xunit.execution.dotnet.xml",
-        "xunit.extensibility.execution.2.4.2.nupkg.sha512",
+        "xunit.extensibility.execution.2.9.3.nupkg.sha512",
         "xunit.extensibility.execution.nuspec"
       ]
     },
@@ -5446,25 +5533,27 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.NET.Test.Sdk >= 17.6.3",
+      "Snapshooter.Xunit >= 1.0.1",
       "xunit >= 2.4.2",
-      "xunit.abstractions >= 2.0.3",
+      "xunit.extensibility.core >= 2.9.3",
+      "xunit.extensibility.execution >= 2.9.3",
       "xunit.runner.visualstudio >= 2.4.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\": {}
+    "C:\\Users\\elif_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\AppSettings.Tests\\AppSettings.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\AppSettings.Tests\\AppSettings.Tests.csproj",
       "projectName": "AppSettings.Tests",
-      "projectPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\AppSettings.Tests\\AppSettings.Tests.csproj",
-      "packagesPath": "C:\\Users\\pinarnurdemirtas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pinarnurdemirtas\\UretimKatalog\\AppSettings.Tests\\obj\\",
+      "projectPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\AppSettings.Tests\\AppSettings.Tests.csproj",
+      "packagesPath": "C:\\Users\\elif_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\elif_\\OneDrive\\Masaüstü\\a\\UretimKatalog\\AppSettings.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pinarnurdemirtas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\elif_\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -5482,6 +5571,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -5492,17 +5586,23 @@
             "target": "Package",
             "version": "[17.6.3, )"
           },
+          "Snapshooter.Xunit": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "xunit": {
             "target": "Package",
             "version": "[2.4.2, )"
           },
-          "xunit.abstractions": {
+          "xunit.extensibility.core": {
             "target": "Package",
-            "version": "[2.0.3, )"
+            "version": "[2.9.3, )"
+          },
+          "xunit.extensibility.execution": {
+            "target": "Package",
+            "version": "[2.9.3, )"
           },
           "xunit.runner.visualstudio": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.4.5, )"
           }
@@ -5523,8 +5623,30 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.117/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: xunit.core 2.4.2 requires xunit.extensibility.core (= 2.4.2) but version xunit.extensibility.core 2.9.3 was resolved.",
+      "libraryId": "xunit.extensibility.core",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: xunit.core 2.4.2 requires xunit.extensibility.execution (= 2.4.2) but version xunit.extensibility.execution 2.9.3 was resolved.",
+      "libraryId": "xunit.extensibility.execution",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
