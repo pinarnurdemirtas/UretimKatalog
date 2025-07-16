@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using UretimKatalog.Domain.Interfaces;
 using UretimKatalog.Domain.Models;
-using UretimKatalog.Identity.Data;
+using UretimKatalog.Persistence.Data;
 
 namespace UretimKatalog.Persistence.Repositories
 {

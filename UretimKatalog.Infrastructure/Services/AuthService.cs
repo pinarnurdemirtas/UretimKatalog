@@ -16,15 +16,15 @@ namespace UretimKatalog.Infrastructure.Services
 {
     public class AuthService : IAuthService
     {
-        private readonly IUnitOfWork    _uow;
+        private readonly IUnitOfWork _uow;
         private readonly IConfiguration _cfg;
-        private readonly IMapper        _map;
+        private readonly IMapper _map;
 
         public AuthService(IUnitOfWork uow, IConfiguration cfg, IMapper map)
         {
-            _uow  = uow;
-            _cfg  = cfg;
-            _map  = map;
+            _uow = uow;
+            _cfg = cfg;
+            _map = map;
         }
 
         public async Task<RegisterResult> RegisterAsync(RegisterCommand req)
@@ -56,21 +56,26 @@ namespace UretimKatalog.Infrastructure.Services
 
         private string GenerateJwtToken(User user)
         {
-            var key   = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_cfg["Jwt:Key"]));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_cfg["Jwt:Key"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
+            var claims = new[]
+            {
+        new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+        new Claim("scope", "orderservice")
+    };
+
             var token = new JwtSecurityToken(
-                issuer:  _cfg["Jwt:Issuer"],
-                audience:_cfg["Jwt:Audience"],
-                claims: new[]
-                {
-                    new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-                },
+                issuer: _cfg["Jwt:Issuer"],
+                audience: _cfg["Jwt:Audience"],
+                claims: claims,
                 expires: DateTime.UtcNow.AddMinutes(int.Parse(_cfg["Jwt:ExpireMinutes"])),
-                signingCredentials: creds);
+                signingCredentials: creds
+            );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
     }
 }

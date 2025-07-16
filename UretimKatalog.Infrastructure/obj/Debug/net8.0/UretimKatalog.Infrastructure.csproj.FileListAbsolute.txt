@@ -24,12 +24,10 @@ C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\bin\Debug\n
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\bin\Debug\net8.0\UretimKatalog.Infrastructure.pdb
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\bin\Debug\net8.0\UretimKatalog.Application.dll
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\bin\Debug\net8.0\UretimKatalog.Domain.dll
-C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\bin\Debug\net8.0\UretimKatalog.Identity.dll
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\bin\Debug\net8.0\UretimKatalog.Persistence.dll
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\bin\Debug\net8.0\UretimKatalog.Domain.pdb
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\bin\Debug\net8.0\UretimKatalog.Application.pdb
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\bin\Debug\net8.0\UretimKatalog.Persistence.pdb
-C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\bin\Debug\net8.0\UretimKatalog.Identity.pdb
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\obj\Debug\net8.0\UretimKatalog.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\obj\Debug\net8.0\UretimKatalog.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pinarnurdemirtas\UretimKatalog\UretimKatalog.Infrastructure\obj\Debug\net8.0\UretimKatalog.Infrastructure.AssemblyInfoInputs.cache

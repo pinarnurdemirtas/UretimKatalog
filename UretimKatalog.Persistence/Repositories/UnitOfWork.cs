@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 using UretimKatalog.Domain.Interfaces;
-using UretimKatalog.Identity.Data;
+using UretimKatalog.Persistence.Data;
 using UretimKatalog.Persistence.Repositories;
 
 namespace UretimKatalog.Persistence.UnitOfWork
